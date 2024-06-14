@@ -1,0 +1,20 @@
+.main-footer{color:black; background:grey;padding-top: 10px;padding-bottom: 10px;}
+.main-footer li{display: inline;margin: 0px 16px;}
+.main-footer ul{list-style: none;margin: 0px;padding: 0px;text-align: center;font-size: 1.2em;}
+.main-footer li Link:hover, .main-footer li Link:active{color:black;}
+.card{background:black!important}
+.box{position: absolute;width: 9em;height: 9em;transform-style:preserve-3d;transition: 1s;}
+.front,.back{position: absolute;width: 10em;height: 10em;}
+.front{background-size:100% 100%;}
+.back{transform: rotateY(180deg);transform-style: preserve-3d;}
+.back .content{background:black;position: absolute;color: white;transform: translateZ(100px);padding:1em}
+.card:hover .box{transform:rotateY(180deg);}
+.back .content{text-align: left;height:10em;width:10em}
+.back .content h1{font-size:1.2em;}
+
+.fa-whatsapp{color:green;width: 1.2em;height: 1.2em;padding: 0.1em;}
+.fa-instagram{color:red;padding: 1px 4px;}
+.fa-telegram{background: grey;color: #000;padding: 0.05em;}
+.fa-whatsapp:hover{background: green;color: black;transform: scale(1.1);transition: .5s ease;}
+.fa-instagram:hover{background:linear-gradient(-45deg,red,#983298,yellow);color: black;transform: scale(1.1);transition: .5s ease;}
+.fa-telegram:hover{background:black;color: grey;transform: scale(1.1);transition: .5s ease;}

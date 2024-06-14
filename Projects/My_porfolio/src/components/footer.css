@@ -1,0 +1,17 @@
+.footer-container{display: flex;justify-content:space-around;}
+.right{display: flex;}
+.left,.right{margin: 2rem 1rem ;}
+.location,.contact,.mail{display:flex;margin:1rem}
+.MePhoto,.MePhoto2{position:absolute;height:6rem;width: 6rem; margin: 1rem;border-radius: 45px;}
+.MePhoto{left:1em}
+.MePhoto2{left: -3em;}
+
+
+.box{width: 10em;height: 10em;transform-style:preserve-3d;transition:.5s;}
+.front,.back{position: absolute;width:6rem;height:6rem;transform: rotateY(180deg);transform-style: preserve-3d;}
+.back{transform: translateZ(60px);}
+.card_img:hover .box{transform:rotateY(180deg);}
+
+@media screen and (max-width:750px){
+    .footer-container{flex-direction: column;}
+}

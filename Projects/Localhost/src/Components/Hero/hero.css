@@ -1,0 +1,21 @@
+#product-overview {
+    background: linear-gradient(to top,#740000 2%,transparent 40%),linear-gradient(to bottom,#740000 2%,transparent 20%), black;
+    color: white;font-size: .8rem;text-shadow: 1px 1px 3px black;height:34  rem;padding:0.4rem 2rem; margin: 0px; 
+}
+#product-overview h1{font-size: 2em;margin: 2em 0;}
+#product-overview h2{font-size: 4em;font-weight: 900;margin:2em 3em .8em 5.5em;letter-spacing: 10px;}
+.btn{display: flex; justify-content: center; width: 100%;margin-top:2em;}
+.introduction{ padding: 1em 2em;}
+.introduction h1{color: white;text-shadow: 1px 1px 2px grey;margin-bottom: .5em;}
+.introduction h2{color: grey; font-size:1.5em;}
+.introduction div{color:white;text-shadow: 1px 1px 2px black; font-size:3em ;font-weight: 700;}
+.introduction ul li{color: white;}
+.introduction h3{color: grey;}
+form button{font-size: 3em;padding: .3em; margin: 0; background: #6f0e0e;}
+.www{background: #ffffff66;font-size: 3em; width: 3em; padding: .3em; margin-left:6em;border-color: #ffffffaa; border-right-color:#ffffff00 ;}
+.dropdown-domain{background: #ffffff66;font-size: 3em; width: 4.4em; padding: .3em;margin-right:.5em; border-left:0;border-color: #ffffffaa; border-right-color:#ffffff00 ;}
+.dropdown-domain:hover{border-color: transparent;}
+.dropdown-domain:focus-visible{outline: none;}
+.domain{font-size:.8em;}
+form input{ background: #ffffff66;border-color: #ffffffaa;border-left-color:#ffffff00 ;border-right-color:#ffffff00 ;font-size: 3em;padding: .3em;width:16em}   
+form button:focus, form input:focus{outline: none;}

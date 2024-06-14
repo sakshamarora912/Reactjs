@@ -1,0 +1,39 @@
+.part-3{padding:1em 10em;background: black;}
+.part-3 a{text-decoration: none;color: #fb0;}
+.part-3 li{width:16em;}
+.part-3 h1{    text-align: left;
+    font-size: .8em;
+    color: grey;}
+.part-3 nav{background-color:#1a1a1a;margin: 2em 0;border-radius:.6em;}
+.container--one,.container--two-a,.container--two-b,.container--two-c,.container--three{padding:0;display: flex;flex-wrap: wrap;}
+.container--one{justify-content: space-between;}
+.container--one nav{background-color:black;color: #1a1a1a;}
+.container--one img{margin: 0 2em;width: 1.2em;margin-left: 0;}
+.container--two{display: flex;}
+.container--two nav{padding:0em 1em;width:85em;margin:0;padding-right: 0;}
+.container--two li{width: 13em;color: #fb0;height: 1.5em;height: 1.5em; list-style: none;text-align: left;font-size: .8em;}
+.container--three nav{    margin: 0.5em 1em;
+    width:11em;text-align: left;
+    border-radius: 1px;
+    padding: 1em}
+.container--three img{height:1em;}
+.container--three--a{height: 6em;width: 16em;}
+.container--three--a h1{color:#d8d6d6}
+.container--three--a ul{display:flex;list-style: none;padding: 0em}
+.container--three--a ul li{background: white;
+width: 3.5em;
+margin-right: 1em;
+padding: .4em .4em .2em .4em;border-radius: 4px;}
+.container--three--b{width:42em;height:3em;padding:.5em 1em;margin: 1em 0 !important;}
+.container--three--b h1{color:#d8d6d6;margin: 0;}
+.container--three--b ul{display: flex;text-align: left;padding: 0;}
+.container--three--b li{color:grey;list-style: none;font-size: .8em;color: #fb0;}
+.container--three--c{width: 16em;}
+.container--three--c h1{color:#d8d6d6}
+.container--three--c div{display:flex;}
+.container--three--c div nav{margin: 0;padding: 0;}
+.container--three--c div nav p{margin: 0 1em;font-size: .8em;height: 1.2em}
+.footer{display: flex;justify-content: space-between;font-size:.8em;    background: none!important}
+.footer nav p{margin: 0;font-size: .8em;width: 15em!important;}
+input{text-align: center;padding: 1em;color: white;background: black;}
+button{border-radius: 5px;margin: 0 .5em;color: black;background: #fb0;width: 11em;}
