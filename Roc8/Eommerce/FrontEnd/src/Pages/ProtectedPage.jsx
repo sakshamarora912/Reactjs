@@ -20,17 +20,25 @@ const ProtectedPage = ({ items }) => {
 
   useEffect(() => {
     const fetchCheckedDepartments = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/fetchCheckedDepartments',{ params: { email } });
-        console.log(response.data);
-        setCheckedItems(response.data.checkedDepartments); 
-        localStorage.setItem('departments', JSON.stringify(response.data.checkedDepartments));
-      } catch (error) {
-        console.error('Error fetching departments:', error);
-      }
-    } 
+        try {
+            const response = await axios.get('http://localhost:5000/fetchCheckedDepartments', {
+                params: { email }
+            });
+
+            if (response.data && response.data.checkedDepartments) {
+                setCheckedItems(response.data.checkedDepartments);
+                localStorage.setItem('departments', JSON.stringify(response.data.checkedDepartments));
+            } else {
+                setCheckedItems([]);
+                localStorage.setItem('departments', JSON.stringify([]));
+            }
+        } catch (error) {
+            console.error('Error fetching departments:', error);
+        }
+    };
+
     fetchCheckedDepartments();
-  }, [email]);
+}, [email]);
 
   useEffect(() => {
     const fetchDepartments = async () => {
