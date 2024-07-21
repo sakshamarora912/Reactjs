@@ -15,7 +15,7 @@ npm I
 # to run 
 npm run dev
 
-the link https://playgameoflife.com/
+# https://playgameoflife.com/
 here are some rules of the game which are implemented to this game
 
 #Rules
