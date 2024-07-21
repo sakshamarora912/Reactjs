@@ -46,7 +46,7 @@ db.connect((err) => {
     }
     console.log('MySQL connected...')
     
-    // db.query(`DELETE TABLENAME departments`);
+    // db.query(`DELETE TABLENAME departments`)
 
     db.query(createTableQuery, (err, result) => {
         if (err) {
@@ -231,11 +231,18 @@ app.get('/fetchCheckedDepartments', (req, res) => {
             res.status(500).json({ error: 'Error fetching checked departments' });
         } else {
             if (results.length > 0) {
-                const checkedDepartments = JSON.parse(results[0].checked_departments);
-                res.status(200).json({ checkedDepartments });
-            } else {
-                res.status(404).json({ message: 'User not found or no departments checked.' });
-            }
+                if (results[0].checked_departments) {
+                    try {
+                        const checkedDepartments = JSON.parse(results[0].checked_departments);
+                        res.status(200).json({ checkedDepartments });
+                    } catch (parseError) {
+                        console.error('Error parsing checked departments JSON:', parseError);
+                        res.status(500).json({ error: 'Error parsing checked departments JSON' });
+                    }
+                } else 
+                    res.status(200).json({ checkedDepartments: [] }); 
+            } else 
+                res.status(200).json({ checkedDepartments: [] });
         }
     });
 });
