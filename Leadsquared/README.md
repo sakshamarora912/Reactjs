@@ -9,8 +9,9 @@ Currently, two official plugins are available:
 
 
 # to run the code go that directory 
-step 1: npm i // to install relative packages
-step 2 : npm run dev
+- step 1: npm i // to install relative packages
+
+- step 2 : npm run dev
 
 //what i have done
 1. 1 have creates 3 components 
