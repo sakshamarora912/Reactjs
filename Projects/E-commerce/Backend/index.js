@@ -161,11 +161,7 @@ app.get('/poularinwomen',async(req,res)=>{
 })
 
 // creating middleware to fetch user
-<<<<<<< HEAD
-const fetchUser = async (req,next)=>{
-=======
 const fetchUser = async (req,res,next)=>{
->>>>>>> da0d305d9099cf0fe5009c3c7683bf25fa46f048
     const token=req.header('auth-token');
     if(!token){
         req.status(401).send({errors:"Please authenticate"});
