@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+
+*{box-sizing: border-box;margin: 0;padding: 0;font-family:'Outfit', sans-serif;}
+body{background: black;}
+h1,h4,p,a{color: white;text-decoration:none;}
+ul{list-style-type: none;}
+.btn{padding:12px 32px;font-size: 1rem;text-transform: uppercase;background:tan;color: black;border: 1px white;font-weight: 600;cursor:pointer;}
+.btn-light{background:transparent;color: white;}
+.btn:hover{background: grey;color: white;transition: .3s;}
+.carousel-container .slick-slide {padding: 0 10px}
+.carousel-container .slick-list {margin: 0 -10px}
+
+.protest-guerrilla-regular {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.handjet {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:"ELGR" 1,"ELSH" 2;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: initial;
+}
+.slick-prev:before,.slick-next:before{font-size: 60px !important}  
+.slick-prev {left: 10px !important}
+.slick-next {right: 40px !important}
+
+@media only screen and (max-width: 512px) {
+  .slick-prev:before,.slick-next:before{font-size: 40px !important}  
+  .slick-prev {left: -5px !important}
+  .slick-next {right: 12px !important}
+}
