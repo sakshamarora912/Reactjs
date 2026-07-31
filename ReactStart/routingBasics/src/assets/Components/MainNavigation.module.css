@@ -1,0 +1,11 @@
+
+
+.list a {
+  text-decoration: none;
+
+} 
+
+.active {
+  color: var(--color-primary-800);
+  text-decoration: underline
+}
