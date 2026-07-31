@@ -1,0 +1,2 @@
+.carousel-container{height:100%;overflow:hidden;position:relative;width:500%}.carousel-track{animation:scroll 100s linear infinite;display:flex;left:0;position:relative}.carousel-card{align-items:center;display:flex;justify-content:center;margin:1em}.carousel-card>img{height:4em;width:10em}@keyframes scroll{0%{transform:translateX(0)}to{transform:translateX(-100%)}}
+/*# sourceMappingURL=main.28a21649.css.map*/

@@ -1,0 +1,8 @@
+.carousel-container {overflow:hidden;position:relative;height:100%;width:500%;overflow: hidden;}
+.carousel-track {display:flex;position:relative;left:0;animation:scroll 100s linear infinite;}
+.carousel-card {display:flex;justify-content:center;align-items:center;margin:1em;}
+.carousel-card > img {height:4em;width: 10em;}
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
